@@ -1,4 +1,4 @@
-# Terraform-jenkins-codepipeline
+# 1.Terraform-jenkins-codepipeline
 # Steps To Follow
 ## 1. Jenkin Server Is Needed On AWS Instance.
 ## 2. Git repository and Terraform files such as (provider.tf,resources.tf,),Jenkin files.
@@ -9,7 +9,7 @@
 
 
 
-# Install Jenkins On Amazon-Linux!
+# 2.Install Jenkins On Amazon-Linux!
 
 ## Set up the repository
 ```bash
