@@ -41,5 +41,5 @@ sudo systemctl enable jenkins
 ```bash
  sudo systemctl start jenkins
 ```
-# The Administrator Password Will Be Saved In 
+# 3.The Administrator Password Will Be Saved In 
 ## /var/lib/jenkins/secrets/initialAdminPassword
