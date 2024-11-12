@@ -43,3 +43,33 @@ sudo systemctl enable jenkins
 ```
 # 3.The Administrator Password Will Be Saved In 
 ## /var/lib/jenkins/secrets/initialAdminPassword
+
+
+# 4.Terraform code Pipeline with jenkins
+
+
+
+
+    pipeline {
+      agent any
+    tools {
+       terraform 'terraform'
+       }
+    stages {
+        stage('gitcheckout'){
+            steps {
+                git branch: 'main', credentialsId: 'a21b46f2-e69e-426e-988a-1bee59cbb20b', url: 'https://github.com/1995lovely/Terraform-jenkins-codepipeline.git'
+            }
+        }
+    stage('Terraform initialize'){
+           steps{
+              sh 'terraform init' 
+           }
+       }
+    stage('terraform apply'){
+            steps{
+                sh 'terraform apply --auto-approve'
+            }
+        }
+    }   
+   }
