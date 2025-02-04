@@ -1,4 +1,4 @@
 resource "aws_instance" "myec2" {
-  ami           = "ami-02ddb77f8f93ca4ca" 
-  instance_type = "t2.nano"
+  ami           = "ami-05fa46471b02db0ce"
+  instance_type = "t2.medium"
 }
